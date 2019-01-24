@@ -1,10 +1,19 @@
 const express = require("express");
+const logger = require("morgan");
+const bodyParser = require("body-parser");
+
 const app = express();
+
+// Setting middlewares
+app.use(logger("dev"));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
+
 
 // el metodo require recibe por parametro la ruta del modulo a importar, por defecto busca un archivo index.js un modulo en js es un archivo js
 // El cual tiene una sentencia export, en este caso se exporta desde routes/views/index.js una funcion que recibe por parametro la instancia de la app
 
-// RUTAS
+//require resuelve el views/index.js el cual se encarga de configurar las rutas dinamicamente
 require('./routes/views/')(app)
 
 // Si no matchea en niguna de las rutas ejecuta el midleware or defecto
