@@ -1,5 +1,5 @@
 {
-  "name": "nodejsesenciales",
+  "name": "nodejs-esencial",
   "version": "1.0.0",
   "description": "Repositorio para el curso de esenciales de Node.js de Platzi.",
   "main": "index.js",
@@ -15,8 +15,8 @@
     "nodejs",
     "esenciales"
   ],
-  "author": "Platzi",
-  "license": "ISC",
+  "author": "Ezex",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/platzi/nodejsesenciales/issues"
   },
