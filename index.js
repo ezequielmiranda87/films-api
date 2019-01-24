@@ -16,9 +16,11 @@ app.use(bodyParser.urlencoded({extended:false}));
 //require resuelve el views/index.js el cual se encarga de configurar las rutas dinamicamente
 require('./routes/views/')(app)
 
-// Si no matchea en niguna de las rutas ejecuta el midleware or defecto
+// This a default response for routes
 require('./routes/special/')(app)
 
+
+// Upload the server instance
 console.log("Iniciando Express.js");
 app.listen(3000, ()=>{
     console.log("Express ha iniciado correctamente!");
