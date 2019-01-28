@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 //require resuelve el views/index.js el cual se encarga de configurar las rutas dinamicamente
 require('./routes/views/')(app)
+require('./routes/api/')(app)
 
 // This a default response for routes
 require('./routes/special/')(app)
