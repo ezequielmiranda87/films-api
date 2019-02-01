@@ -50,6 +50,4 @@ function closeApp(){
         .then(()=>process.exit(0))
 }
 
-
-//setTimeout(()=>{process.exit(0)},5000)
 initMongo()
