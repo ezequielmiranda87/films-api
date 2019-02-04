@@ -12,7 +12,7 @@ module.exports = (app) => {
         return res.json(response);
     })
 
-    app.get(`${API_PATH}/films/:id`, async(req, res)=>{
+    app.get(`${API_PATH}/film/:id`, async(req, res)=>{
     /* GET:ID endpoint => one-film
     ** 
     */
@@ -33,7 +33,7 @@ module.exports = (app) => {
          return res.status(400).send({reason: "No film sent."})
     })
 
-    app.delete(`${API_PATH}/films/:id`, async(req, res)=>{
+    app.delete(`${API_PATH}/film/:id`, async(req, res)=>{
         /* DELETE:ID endpoint => deleteone-film
         ** 
         */
